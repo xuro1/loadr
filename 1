@@ -1,0 +1,209 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local ScreenGui = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local Bottom_Bar = Instance.new("Frame")
+local BottomDivider = Instance.new("Frame")
+local ActiveUserLabel = Instance.new("TextLabel")
+local BuildLabel = Instance.new("TextLabel")
+local Right_Divider = Instance.new("Frame")
+local GameImage = Instance.new("ImageLabel")
+local Region = Instance.new("TextLabel")
+local Game_Option = Instance.new("Frame")
+local LoadButton = Instance.new("Frame")
+local Status = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local Type = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Divider = Instance.new("Frame")
+local Glow_Around = Instance.new("ImageLabel")
+
+-- Properties
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Background.Name = "Background"
+Background.Parent = ScreenGui
+Background.BackgroundColor3 = Color3.new(0.0470588, 0.0470588, 0.0470588)
+Background.BorderColor3 = Color3.new(0, 0, 0)
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0.308401853, 0, 0.255938619, 0)
+Background.Size = UDim2.new(0, 587, 0, 330)
+
+Bottom_Bar.Name = "Bottom_Bar"
+Bottom_Bar.Parent = Background
+Bottom_Bar.BackgroundColor3 = Color3.new(0.0470588, 0.0470588, 0.0470588)
+Bottom_Bar.BorderColor3 = Color3.new(0, 0, 0)
+Bottom_Bar.BorderSizePixel = 0
+Bottom_Bar.Position = UDim2.new(0, 1, 1.00309396, -25)
+Bottom_Bar.Size = UDim2.new(0.705281079, -2, -0.0182456505, 24)
+
+BottomDivider.Name = "BottomDivider"
+BottomDivider.Parent = Bottom_Bar
+BottomDivider.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+BottomDivider.BorderColor3 = Color3.new(0, 0, 0)
+BottomDivider.BorderSizePixel = 0
+BottomDivider.Position = UDim2.new(0, 0, 0, -1)
+BottomDivider.Size = UDim2.new(1.00025213, 0, 0, 1)
+
+ActiveUserLabel.Name = "ActiveUserLabel"
+ActiveUserLabel.Parent = Bottom_Bar
+ActiveUserLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ActiveUserLabel.BackgroundTransparency = 1
+ActiveUserLabel.BorderColor3 = Color3.new(0, 0, 0)
+ActiveUserLabel.BorderSizePixel = 0
+ActiveUserLabel.Position = UDim2.new(1, -204, -0.0382085778, 1)
+ActiveUserLabel.Size = UDim2.new(0, 200, 1.33852732, -1)
+ActiveUserLabel.Font = Enum.Font.RobotoMono
+ActiveUserLabel.Text = "active user: <font color=\"rgb(250, 250, 250)\">Lifetime-</font>"
+ActiveUserLabel.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+ActiveUserLabel.TextSize = 12
+ActiveUserLabel.TextXAlignment = Enum.TextXAlignment.Right
+
+BuildLabel.Name = "BuildLabel"
+BuildLabel.Parent = Bottom_Bar
+BuildLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+BuildLabel.BackgroundTransparency = 1
+BuildLabel.BorderColor3 = Color3.new(0, 0, 0)
+BuildLabel.BorderSizePixel = 0
+BuildLabel.Position = UDim2.new(0, 4, 0, 0)
+BuildLabel.Size = UDim2.new(0, 200, 1.35037136, -1)
+BuildLabel.Font = Enum.Font.RobotoMono
+BuildLabel.Text = "serotonin.prod <font color=\"rgb(250, 250, 250)\">loader</font>"
+BuildLabel.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+BuildLabel.TextSize = 12
+BuildLabel.TextWrapped = true
+BuildLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Right_Divider.Name = "Right_Divider"
+Right_Divider.Parent = Background
+Right_Divider.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+Right_Divider.BorderColor3 = Color3.new(0, 0, 0)
+Right_Divider.BorderSizePixel = 0
+Right_Divider.Position = UDim2.new(0.702050924, 0, 0, 0)
+Right_Divider.Size = UDim2.new(0, 1, 0, 330)
+
+GameImage.Name = "GameImage"
+GameImage.Parent = Right_Divider
+GameImage.BackgroundColor3 = Color3.new(1, 1, 1)
+GameImage.BackgroundTransparency = 1
+GameImage.BorderColor3 = Color3.new(0, 0, 0)
+GameImage.BorderSizePixel = 0
+GameImage.Position = UDim2.new(14.7311401, 0, 0.0524293855, 0)
+GameImage.Size = UDim2.new(0, 148, 0, 141)
+GameImage.Image = "http://www.roblox.com/asset/?id=17845851417"
+
+Region.Name = "Region"
+Region.Parent = GameImage
+Region.BackgroundColor3 = Color3.new(1, 1, 1)
+Region.BackgroundTransparency = 1
+Region.BorderColor3 = Color3.new(0, 0, 0)
+Region.BorderSizePixel = 0
+Region.Position = UDim2.new(0.0970000029, 0, 1, 0)
+Region.Size = UDim2.new(0, 115, 0, 30)
+Region.Font = Enum.Font.RobotoMono
+Region.Text = "Region: Not Found"
+Region.TextColor3 = Color3.new(0.756863, 0.756863, 0.756863)
+Region.TextSize = 14
+
+Game_Option.Name = "Game_Option"
+Game_Option.Parent = Background
+Game_Option.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Game_Option.BorderColor3 = Color3.new(0, 0, 0)
+Game_Option.BorderSizePixel = 0
+Game_Option.Position = UDim2.new(0.0306643955, 0, 0.0666666701, 0)
+Game_Option.Size = UDim2.new(0, 384, 0, 84)
+
+LoadButton.Name = "LoadButton"
+LoadButton.Parent = Game_Option
+LoadButton.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+LoadButton.BorderColor3 = Color3.new(0, 0, 0)
+LoadButton.BorderSizePixel = 0
+LoadButton.Position = UDim2.new(0.724867642, 0, 0.118160605, 0)
+LoadButton.Size = UDim2.new(0, 95, 0, 27)
+
+Status.Name = "Status"
+Status.Parent = LoadButton
+Status.BackgroundColor3 = Color3.new(1, 1, 1)
+Status.BackgroundTransparency = 1
+Status.BorderColor3 = Color3.new(0, 0, 0)
+Status.BorderSizePixel = 0
+Status.Position = UDim2.new(-0.368111372, -204, 1.51734757, 1)
+Status.Size = UDim2.new(-1.10526311, 200, 1.03820825, -1)
+Status.Font = Enum.Font.RobotoMono
+Status.Text = "Status: <font color=\"rgb(4,255,0)\">Undetected</font>"
+Status.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+Status.TextSize = 14
+Status.TextXAlignment = Enum.TextXAlignment.Right
+
+UICorner.Parent = LoadButton
+UICorner.CornerRadius = UDim.new(0, 12)
+
+Type.Name = "Type"
+Type.Parent = LoadButton
+Type.BackgroundColor3 = Color3.new(1, 1, 1)
+Type.BackgroundTransparency = 1
+Type.BorderColor3 = Color3.new(0, 0, 0)
+Type.BorderSizePixel = 0
+Type.Position = UDim2.new(-0.978637695, -204, -0.404647261, 1)
+Type.Size = UDim2.new(-0.042105265, 200, 1.88888919, -1)
+Type.Font = Enum.Font.RobotoMono
+Type.Text = "    Da Hood: <font color=\"rgb(250, 250, 250)\">Paid</font>"
+Type.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+Type.TextSize = 14
+Type.TextWrapped = true
+Type.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = LoadButton
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundTransparency = 1
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 95, 0, 27)
+TextButton.Font = Enum.Font.RobotoMono
+TextButton.Text = "Load"
+TextButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+TextButton.TextSize = 14
+
+Divider.Name = "Divider"
+Divider.Parent = Game_Option
+Divider.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+Divider.BorderColor3 = Color3.new(0, 0, 0)
+Divider.BorderSizePixel = 0
+Divider.Position = UDim2.new(0, 0, 0.59523809, 0)
+Divider.Size = UDim2.new(0, 384, 0, 1)
+
+Glow_Around.Name = "Glow_Around"
+Glow_Around.Parent = ScreenGui
+Glow_Around.BackgroundColor3 = Color3.new(1, 1, 1)
+Glow_Around.BackgroundTransparency = 1
+Glow_Around.BorderColor3 = Color3.new(0, 0, 0)
+Glow_Around.BorderSizePixel = 0
+Glow_Around.Position = UDim2.new(0.286295772, 0, 0.231057301, 0)
+Glow_Around.Size = UDim2.new(0, 653, 0, 368)
+Glow_Around.ZIndex = 0
+Glow_Around.Image = "http://www.roblox.com/asset/?id=4996891970"
+Glow_Around.ImageColor3 = Color3.new(0.898039, 0.843137, 0.843137)
+
+-- Scripts
+
+local function NITB_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	print("✅ Loader Executed!")
+	
+	print("✅ Loader Working!")
+	
+	print("⌛ join the discord")
+end
+coroutine.wrap(NITB_fake_script)()
